@@ -12,3 +12,4 @@ application should fulfill requirements
 8. should work with otel tracing and should respond in response header with current request trace id
 9. should be able to load configuration value from GCP secret 
 10. have functional (e2e) tests with mocked oidc configuration
+11. should expose todo CRUD operations
