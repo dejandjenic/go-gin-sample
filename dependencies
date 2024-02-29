@@ -1,0 +1,53 @@
+docker run -p 8081:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:23.0.7 start-dev
+
+
+go get -u github.com/gin-gonic/gin
+go get "github.com/sirupsen/logrus"
+
+go install github.com/swaggo/swag/cmd/swag@latest
+
+
+go get -u github.com/swaggo/swag
+
+go get "github.com/swaggo/files"
+go get "github.com/swaggo/gin-swagger"
+go get "github.com/toorop/gin-logrus"
+
+
+
+go get github.com/joho/godotenv
+
+
+
+go get "cloud.google.com/go/firestore"
+
+
+go get -u github.com/rs/zerolog/log
+
+
+go get github.com/coreos/go-oidc
+
+go get github.com/caarlos0/env/v10
+
+
+go get cloud.google.com/go/secretmanager/apiv1
+go get google.golang.org/genproto/googleapis/cloud/secretmanager/v1
+
+
+go get github.com/prometheus/client_golang/prometheus
+#go get github.com/prometheus/client_golang/prometheus/promauto
+go get github.com/prometheus/client_golang/prometheus/promhttp
+
+go get github.com/zsais/go-gin-prometheus
+
+
+go get go.opentelemetry.io/otel
+
+go get "go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
+go get go.opentelemetry.io/otel/exporters/otlp/otlptrace
+go get go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
+
+
+go get "github.com/gavv/httpexpect"
+
+
